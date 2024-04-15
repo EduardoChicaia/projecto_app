@@ -42,6 +42,7 @@ button:hover{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
  
 
 }
@@ -54,12 +55,27 @@ button:hover{
     margin: 10px 15px;
 }
 .tesk_item2 {
-    list-style: none;
-    margin: 30px 5px;
-}
-.tesk_item2 li {
-    background: white;
-    margin: 10px;
     height: 25px;
-    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    margin: 10px 5px;
+}
+.tesk_item2:hover img {
+    opacity: 1;
+}
+img {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.Tempo {
+
 }
