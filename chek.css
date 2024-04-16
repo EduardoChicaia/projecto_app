@@ -115,4 +115,8 @@ img {
     padding: 10px;
     text-indent: 30px;
 }
+.risco {
+    background: #8fac55;
+    text-decoration: line-through;
+}
 
