@@ -1,21 +1,26 @@
 const button = document.getElementById("button_add");
-const input = document.getElementById("tesk");
+let input = document.getElementById("tesk");
 const ulCompleta = document.querySelector('.tesk_item')
 const activar = document.querySelector('.activar')
 const desactivar = document.querySelector('.desactivar')
 
 let list_item = []
+function ValiditAdicionar(){
+    list_item.find(x)
+}
 
 function adicionar(){
     
-    if (input.value != ''){
+    if (!input.value){
+        alert('Adiciona o número da moto por favor!')
+    }else if (ValiditAdicionar()){ 
+        alert('Upss a moto já existe')        
+    }else {
         list_item.push(input.value)
-    }else { 
-        alert('Adiciona o número da moto por favor!')       
+        mostrar()
+        input.value = ''
     }
-
-    mostrar()
-    input.value = ''
+    
 
 }
 
