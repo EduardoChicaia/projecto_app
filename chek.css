@@ -14,7 +14,7 @@ body{
 .container {
     background: #d1d1d1;
     width: 450px;
-    height: 600px;
+    height: 700px;
     padding: 10px;
     margin:100px auto ;
     border-radius: 10px;
@@ -24,6 +24,9 @@ body{
     height: 25px;
     margin: 10px;
     padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 3px rgba(87, 84, 84, 0.178);
 }
 button {
     height: 25px;
@@ -61,6 +64,8 @@ button:hover{
     background-color: white;
     list-style: none;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 3px rgba(87, 84, 84, 0.178);
     margin: 10px 5px;
 }
 .tesk_item2:hover img {
@@ -76,6 +81,38 @@ img {
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-.Tempo {
-
+.Tempo1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 3px solid #c14599;
+   margin: auto;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
 }
+.Tempo2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Tempo2 button {
+    margin: 2px;
+}
+.Avaliação {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Avaliação2{
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 3px rgba(87, 84, 84, 0.178);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    text-indent: 30px;
+}
+
