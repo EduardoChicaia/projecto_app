@@ -8,36 +8,30 @@
 </head>
 <body>
     <main class="container">
-        <input class="tesk" placeholder="Adicionar o númer da moto">
-        <button>Adicionar</button>
+        <input type="number" id="tesk" class="tesk" placeholder="Adicionar o númer da moto">
+        <button id="button_add">Adicionar</button>
         <ul class="tesk_item">
-            <li>1</li>
-            <li>2</li> 
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
+           
         </ul>
         <ul class="tesk_item2">
-            <img src="img/ok.png" alt="ok">
+            <img class="activar remover" src="img/ok.png" alt="ok">
             <li>Verificar o nível de combustível</li>
-            <img src="img/nok.png" alt="nok">
+            <img class="desactivar" src="img/nok.png" alt="nok">
         </ul>
         <ul class="tesk_item2">
-            <img src="img/ok.png" alt="ok">
+            <img class="activar" src="img/ok.png" alt="ok">
             <li>Ligar a moto pelo start</li>
-            <img src="img/nok.png" alt="nok">
+            <img class="desactivar" src="img/nok.png" alt="nok">
         </ul>
         <ul class="tesk_item2">
-            <img src="img/ok.png" alt="ok">
+            <img class="activar" src="img/ok.png" alt="ok">
             <li>Ligar a moto pelo kicks caso não pegar pelo start</li>
             <img src="img/nok.png" alt="nok">
         </ul>
         <ul class="tesk_item2">
-            <img src="img/ok.png" alt="ok">
+            <img class="activar" src="img/ok.png" alt="ok">
             <li>Deixar 15 minutos ligada/ depois desligar</li>
-            <img src="img/nok.png" alt="nok">
+            <img class="desactivar" src="img/nok.png" alt="nok">
         </ul>
         <div class="Tempo">
             <div class="Tempo1">
@@ -52,5 +46,7 @@
            <textarea class="Avaliação2" name="av" id="av" cols="40" rows="8"></textarea>
         </div>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
