@@ -4,18 +4,31 @@ const ulCompleta = document.querySelector('.tesk_item')
 const activar = document.querySelector('.activar')
 const desactivar = document.querySelector('.desactivar')
 
+
+
 let list_item = []
 
 function adicionar(){
-    
-    if (input.value != ''){
-        list_item.push(input.value)
-    }else { 
-        alert('Adiciona o número da moto por favor!')       
-    }
 
+    list_item.push({
+
+       tarefa: input.value,
+       concluida: false
+    }
+)
     mostrar()
     input.value = ''
+    
+    /*if (!input.value){
+        alert('Adiciona o número da moto por favor!')
+    }else { 
+              
+    }
+    if( input.value == `${tarefa}`) {
+        alert('Upps o número da moto já foi existe!')
+    }*/
+
+   
 
 }
 
@@ -23,22 +36,22 @@ function mostrar(){
 
     let novaLi=''
 
-    list_item.forEach( (tarefa) => {
+    list_item.forEach( (item) => {
 
-        novaLi= novaLi + `<li class="tesk_t">${tarefa}</li>`
+        novaLi= novaLi + `<li class="tesk_t">${item.tarefa}</li>`
     })
    
     ulCompleta.innerHTML = novaLi
 }
 
 function feito(){
-    var activar = document.querySelector('.tesk_item2')
-    activar.classList.add("risco")
+    let activar = document.querySelector('.tesk_item2')
+    activar.classList.toggle("risco")
 } 
 
 function remover(){
     var desactivar = document.querySelector('.tesk_item2')
-    desactivar.classList.remove("risco")
+    desactivar.classList.toggle("mal")
 } 
 desactivar.addEventListener('click', remover)
 activar.addEventListener('click', feito)

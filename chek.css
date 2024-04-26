@@ -44,7 +44,6 @@ button:hover{
 .tesk_item {
     list-style: none;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 30px;
  
 
@@ -119,4 +118,7 @@ img {
     background: #8fac55;
     text-decoration: line-through;
 }
-
+.mal {
+    background: rgba(196, 27, 27, 0.502);
+    text-decoration: line-through;
+}
