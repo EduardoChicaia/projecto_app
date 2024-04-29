@@ -13,7 +13,7 @@ function adicionar(){
     list_item.push({
 
        tarefa: input.value,
-       concluida: false
+       feito: false
     }
 )
     mostrar()
